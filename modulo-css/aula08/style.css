@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf7f7;
+    color: #2a2a2a;
+    margin: 24px;
+}
+
+h1 {
+    color: #e8622c;
+}
+
+h2 {
+    color: #e8622c;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+header {
+    background-color: rgb(255, 218, 196);
+    padding: 16px;
+    border-bottom: 3px solid #e8622c;
+    margin-bottom: 24px;
+}
+
+nav a {
+    color: #e8622c;
+    text-decoration: none;
+    padding: 4px 8px;
+}
+
+nav a:hover {
+    background-color: #ffbd9f;
+}
+
+.destaque {
+    background-color: rgb(255, 218, 196);
+    border-left: 4px solid #e8622c;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+}
+
+.destaque::marker {
+    color: #e8622c;
+}
+
+li {
+    padding: 4px;
+}
+
+#topo {
+    margin-top: 0;
+}
+
+#voltar-topo {
+    text-decoration: none;
+}
+
+th,
+td {
+    border: 1px solid #e8622c;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #e8622c;
+}
+
+th {
+    background-color:#ffd7c7;
+    color: #e8622c;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+input,
+textarea,
+select {
+    padding: 4px;
+    border: 1px solid #e8622c;
+    margin-bottom: 8px;
+}
+
+button:hover {
+    background-color: #ffd7c7;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    padding-left: 10px;
+    border: 1px solid #e8622c;
+    color: #e8622c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #010720;
+    color: #F8FAFC;
+}
+
+nav a {
+    color: #A78BFA;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C4B5FD;
+}
+
+body {
+    background-color: #020824;
+}
+
+h1 {
+    
+}
+
+main {
+    color: #E2E8F0;
+}
+
+table {
+    border: 1px solid #26365C;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #26365C;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #7C3AED;
+    color: #ffffff;
+}
+
+td {
+    background-color: #061338;
+}
+
+li a {
+    color: #A78BFA;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #C4B5FD;
+}
+
+p a {
+    color: #A78BFA;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #C4B5FD;
+}
+
+footer {
+    background-color: #061338;
+    color: #CBD5E1;
+    border: 1px solid #26365C;
+}
+
+footer a {
+    color: #A78BFA;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #C4B5FD;
+}
+
+. {
+
+}
+
+#inscricao {
+    background-color: #061338;
+    border: 1px solid #26365C;
+}
+
+label {
+    color: #ffffff;
+}
+
+input,
+select,
+textarea {
+    color: #94A3B8;
+}
+
+button {
+    background-color: #6D28D9;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color: #7C3AED;
+}
