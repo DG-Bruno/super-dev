@@ -474,7 +474,31 @@ console.log(codigoDeAcesso);
 console.log(typeof codigoDeAcesso);
 
 ==========================================================================================================
-//questao15
+
+// # Parte 15 — Carga da nave ⭐⭐⭐⭐
+
+// A nave possui capacidade máxima para:
+
+// 12000 kg
+
+// Ela levará:
+
+// Equipamentos científicos: 4250 kg
+// Alimentos: 1850 kg
+// Oxigênio: 3100 kg
+// Equipamentos pessoais: 950 kg
+
+// Calcule:
+
+// 1. peso total transportado;
+// 2. quantidade de capacidade que ainda sobra.
+
+// Exiba:
+
+// Capacidade máxima: XXXXX kg
+// Carga utilizada: XXXXX kg
+// Capacidade restante: XXXXX kg
+
 const capacidadeMaximaNave = 12000;
 const equipamentosCientificos = 4250;
 const alimentos = 1850;
@@ -487,7 +511,34 @@ console.log("Capacidade máxima: " + capacidadeMaximaNave + " kg");
 console.log("Carga utilizada: " + pesoTotalTransportado + " kg");
 console.log("Capacidade restante: " + pesoSobra + " kg");
 
-//questao16
+========================================================================================================
+
+/* # Parte 16 — Pacotes de alimentos ⭐⭐⭐⭐
+
+Existem:
+
+127 pacotes de alimento
+
+Cada caixa comporta:
+
+10 pacotes
+
+Descubra:
+
+1. quantas caixas completas podem ser preenchidas;
+2. quantos pacotes sobram.
+
+## Dica
+
+Para descobrir a sobra, pesquise o comportamento do operador:
+
+```javascript
+%
+```
+
+Você não precisa utilizar `if`. */
+
+
 const pacotesAlimentos = 127;
 const capacidadeCaixa = 10;
 const quantidadeCaixas = Math.floor(pacotesAlimentos / capacidadeCaixa);
@@ -496,7 +547,53 @@ const sobraPacotes = pacotesAlimentos % capacidadeCaixa;
 console.log("Caixas preenchidas: " + quantidadeCaixas);
 console.log("Sobra de pacotes: " + sobraPacotes);
 
-//questao17
+===================================================================================================
+
+// # Parte 17 — Problema de lógica ⭐⭐⭐⭐
+
+// A missão possui:
+
+// 4 tripulantes
+
+// Cada tripulante precisa consumir:
+
+// 3 litros de água por dia
+
+// A missão terá duração de:
+
+// 16 dias
+
+// A nave possui:
+
+// 220 litros de água
+
+// Sem utilizar `if`, descubra:
+
+// 1. consumo de água de uma pessoa durante toda a missão;
+// 2. consumo total da tripulação;
+// 3. quantidade de água restante depois da missão.
+
+// Antes de escrever código, preencha:
+
+// ENTRADAS:
+4 tripulantes
+3 litros de água por pessoa por dia
+16 dias de missão
+220 litros de água disponíveis
+
+// PROCESSAMENTO:
+Consumo de uma pessoa: 3 × 16 = 48 litros
+Consumo total: 48 × 4 = 192 litros
+Água restante: 220 - 192 = 28 litros
+
+// SAÍDAS:
+Consumo de uma pessoa: 48 litros
+Consumo total da tripulação: 192 litros
+Água restante: 28 litros
+
+// Depois transforme sua lógica em JavaScript.
+
+
 const consumoAguaTripulanteDia = 3;
 const duracaoMissao = 16;
 const capacidadeAguaNave = 220;
@@ -507,6 +604,9 @@ const sobraAgua = capacidadeAguaNave - consumoTotalAguaTripulacao;
 console.log("Consumo total de água por pessoa: " + consumoTotalAguaPessoa);
 console.log("Consumo total de água da tripulação: " + consumoTotalAguaTripulacao);
 console.log("Quantidade de água resrtante: " + sobraAgua);
+
+======================================================================================================
+
 
 //questao18
 console.log("==================================");
