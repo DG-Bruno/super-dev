@@ -1,0 +1,567 @@
+// # Atividade Prática — Missão Espacial SuperDev 🚀
+
+// ## JavaScript e Lógica de Programação
+
+// ### Contexto
+
+// A equipe da **SuperDev Space Agency** está preparando uma missão para enviar uma nave até uma estação espacial.
+
+// Antes da decolagem, o sistema precisa calcular algumas informações importantes da missão, como:
+
+// - distância percorrida;
+// - duração estimada da viagem;
+// - consumo de combustível;
+// - quantidade de combustível restante;
+// - custo da missão;
+// - divisão do custo entre patrocinadores.
+
+// Seu trabalho será criar pequenos trechos de código JavaScript para ajudar a equipe a realizar esses cálculos.
+
+// > Nesta atividade, o objetivo principal não é decorar JavaScript.  
+// > O objetivo é **entender o problema, separar os dados e transformar a solução em código**.
+
+// ---
+
+// # Regras da atividade
+
+// Por enquanto, utilize apenas os conteúdos que já estamos trabalhando:
+
+// - `console.log()`
+// - `const`
+// - `let`
+// - `String`
+// - `Number`
+// - `Boolean`
+// - `typeof`
+// - operadores matemáticos:
+//   - `+`
+//   - `-`
+//   - `*`
+//   - `/`
+//   - `%`
+
+=========================================================================
+
+// # Parte 1 — Identificação da missão ⭐
+
+// Crie as seguintes informações:
+
+// Nome da missão: SuperDev I
+// Destino: Estação Alpha
+// Número de tripulantes: 4
+// Missão tripulada: true
+
+// Armazene cada informação em uma variável ou constante apropriada.
+
+// Depois, utilize `console.log()` para mostrar:
+
+// Missão: SuperDev I
+// Destino: Estação Alpha
+// Tripulantes: 4
+// Missão tripulada: true
+
+// ## Pergunta
+
+// Qual dessas informações provavelmente deveria utilizar `const`?
+Todas
+
+// Por quê?
+Porque todas informações são fixas e não precisam ser alteradas durante a execução
+
+const nomeMissao = "SuperDev I";
+const destino = "Estação Alpha";
+const numeroTripulantes = 4;
+const missaoTripulada = true;
+
+=============================================================================================
+
+// # Parte 2 — Descobrindo os tipos ⭐
+
+// Utilizando as informações da missão, mostre no console o **tipo de dado** de:
+
+// - nome da missão;
+// - quantidade de tripulantes;
+// - informação que indica se a missão é tripulada.
+
+// Utilize:
+
+// ```javascript
+// typeof
+// ```
+
+// Exemplo de saída:
+
+// string
+// number
+// boolean
+
+// console.log(nomeMissao);
+// console.log(destino);
+// console.log(numeroTripulantes);
+// console.log(missaoTripulada);
+
+console.log(typeof nomeMissao);
+console.log(typeof numeroTripulantes);
+console.log(typeof missaoTripulada);
+
+===========================================================================================
+
+// # Parte 3 — Distância da viagem ⭐
+
+// A estação espacial está localizada a:
+
+// 384000 km
+
+// A nave precisa:
+
+// 1. viajar até a estação;
+// 2. posteriormente retornar para a Terra.
+
+// Crie uma constante chamada:
+
+// ```javascript
+// const distanciaAteEstacao = 384000;
+// ```
+
+// Calcule a **distância total da missão**.
+
+// Mostre:
+
+// Distância total da missão: XXXXX km
+
+const distanciaAteEstacao = 384000;
+const distanciaVolta = 384000;
+const distanciaTotal = distanciaAteEstacao + distanciaVolta;
+
+console.log("Distância total da missão:" + " " + distanciaTotal + " " + "km");
+
+====================================================================================================
+
+// # Parte 4 — Tempo estimado da viagem ⭐⭐
+
+// A velocidade média da nave será:
+
+// 28000 km/h
+
+// Sabendo a distância total da missão, descubra quantas horas aproximadamente serão necessárias para completar a viagem.
+
+// Utilize a ideia:
+
+// tempo = distância / velocidade
+
+// Mostre:
+
+// Tempo estimado da missão: XXXXX horas
+
+// > Não precisa arredondar o resultado.
+
+const velocidadeMedia = 28000;
+const tempoMissao = distanciaTotal / velocidadeMedia;
+
+console.log("Tempo estimado da missão:" + " " + tempoMissao + " " + "horas");
+
+=================================================================================================
+
+// # Parte 5 — Combustível ⭐⭐
+
+// A nave inicia a missão com:
+
+// 50000 litros de combustível
+
+// Durante a viagem de ida, serão utilizados:
+
+// 18000 litros
+
+// Durante a viagem de volta:
+
+// 17000 litros
+
+// Calcule:
+
+// 1. combustível total utilizado;
+// 2. combustível restante.
+
+// Exiba:
+
+// Combustível inicial: XXXXX litros
+// Combustível utilizado: XXXXX litros
+// Combustível restante: XXXXX litros
+
+const combustivelInicial = 50000;
+const consumoIda = 18000;
+const consumoVolta = 17000;
+const consumoTotal = consumoIda + consumoVolta;
+const combustivelRestante = combustivelInicial - consumoTotal;
+
+console.log("Combustível inicial:" + " " + combustivelInicial + " " + "litros");
+console.log("Combustível ultilizado:" + " " + consumoTotal + " " + "litros");
+console.log("Combustível restante:" + " " + combustivelRestante + " " + "litros");
+
+=============================================================================================
+
+// # Parte 6 — Consumo médio ⭐⭐
+
+// Utilizando:
+
+// - distância total da missão;
+// - combustível total utilizado;
+
+// calcule quantos quilômetros a nave percorre aproximadamente por litro de combustível.
+
+// A ideia é:
+
+// consumo médio = distância total / combustível utilizado
+
+// Mostre:
+
+// Consumo médio: XXXXX km/L
+
+const consumoMedio = distanciaTotal / consumoTotal;
+
+console.log("Consumo médio:" + " " + consumoMedio + " " + "km/L");
+
+====================================================================================================
+
+// # Parte 7 — Custo da missão ⭐⭐
+
+// Os custos previstos são:
+
+// Combustível: R$ 1.250.000
+// Equipe: R$ 480.000
+// Equipamentos: R$ 920.000
+// Alimentação: R$ 75.000
+
+// Crie uma constante para cada valor.
+
+// Depois calcule o custo total.
+
+// Saída:
+
+// ========== CUSTOS DA MISSÃO ==========
+
+// Combustível: R$ XXXXX
+// Equipe: R$ XXXXX
+// Equipamentos: R$ XXXXX
+// Alimentação: R$ XXXXX
+
+// Custo total: R$ XXXXX
+
+const gastosCombustivel = 1250000;
+const gastosEquipe = 480000;
+const gastosEquipamentos = 920000;
+const gastosAlimentacao = 75000;
+const custoTotal = gastosCombustivel + gastosEquipe + gastosEquipamentos + gastosAlimentacao;
+
+console.log("Combustível:" + " " + "R$" + " " + gastosCombustivel);
+console.log("Equipe:"+ " " + "R$" + " " + gastosEquipe);
+console.log("Equipamentos:" + " " + "R$" + " " + gastosEquipamentos);
+console.log("Alimentação:" + " " + "R$" + " " + gastosAlimentacao);
+console.log("Custo total:" + " " + "R$" + " " + custoTotal);
+
+================================================================================================
+
+// # Parte 8 — Patrocinadores ⭐⭐⭐
+
+// A missão será financiada igualmente por:
+
+// 5 patrocinadores
+
+// Utilizando o custo total calculado anteriormente, descubra quanto cada patrocinador deverá pagar.
+
+// Mostre:
+
+// Quantidade de patrocinadores: 5
+
+// Valor por patrocinador: R$ XXXXX
+
+const patrocinadores = 5;
+const custoPatrocinador = custoTotal / patrocinadores;
+
+console.log("Quantidade de patrocinadores:" + " " + patrocinadores);
+console.log("Custo por patrocinador:" + " " + "R$" + " " + custoPatrocinador);
+
+===================================================================================================
+
+// # Parte 9 — Reserva de segurança ⭐⭐⭐
+
+// A agência decidiu adicionar uma reserva financeira de:
+
+// 12%
+
+// sobre o custo original da missão.
+
+// Calcule:
+
+// 1. valor da reserva;
+// 2. novo custo total da missão.
+
+// Saída:
+
+// Custo original: R$ XXXXX
+// Reserva de segurança: R$ XXXXX
+// Custo final: R$ XXXXX
+
+// ## Antes de programar
+
+// Responda:
+
+// Como calculamos 12% de um valor?
+EX: Valor * 12 / 100
+
+// Somente depois transforme sua resposta em código.
+
+const reservaFinanceira = 12;
+const valorReserva = custoTotal * (reservaFinanceira / 100);
+const custoMissaoReserva = custoTotal + valorReserva;
+
+console.log("Custo original:" + " " + "R$" + " " + custoTotal);
+console.log("Reserva de segurança: " + "R$ " + valorReserva);
+console.log("Custo final: " + "R$ " + custoMissaoReserva);
+
+=======================================================================================
+
+// # Parte 10 — Nova divisão entre patrocinadores ⭐⭐⭐
+
+// Agora utilize o **novo custo final da missão**, incluindo a reserva de segurança.
+
+// Calcule novamente quanto cada um dos 5 patrocinadores deverá pagar.
+
+// Mostre:
+
+// Novo valor por patrocinador: R$ XXXXX
+
+const novoCustoPatrocinador = custoMissaoReserva / patrocinadores;
+
+console.log("Novo valor dos patrocinador: " + "R$ " + novoCustoPatrocinadores);
+
+============================================================================================
+
+// # Parte 11 — Contagem regressiva em segundos ⭐⭐⭐
+
+// A equipe precisa iniciar uma contagem regressiva de:
+
+// 10 minutos
+
+// Por enquanto não vamos criar a contagem funcionando automaticamente.
+
+// Seu objetivo é apenas descobrir quantos **segundos** existem em 10 minutos.
+
+// Considere:
+
+// 1 minuto = 60 segundos
+
+// Saída:
+
+// 10 minutos correspondem a XXXXX segundos.
+
+const minutos = 10;
+const segundos = 60;
+const totalSegundos = minutos * segundos;
+
+console.log("10 minutos correspondem a " + totalSegundos + " segundos");
+
+==================================================================================================
+
+// # Parte 12 — Tempo de comunicação ⭐⭐⭐
+
+// Uma mensagem enviada pela nave demora:
+
+// 8 minutos
+
+// para chegar à central.
+
+// Uma resposta da central também demora:
+
+// 8 minutos
+
+// Calcule quanto tempo passa entre:
+
+// 1. a nave enviar uma pergunta;
+// 2. a central receber;
+// 3. a central responder imediatamente;
+// 4. a nave receber a resposta.
+
+// Mostre o resultado em:
+
+// - minutos;
+// - segundos.
+
+const MensagemEnviadaNave = 8;
+const MensagemEnviadaCentral = 8;
+const tempoTotalMensagens = MensagemEnviadaNave + MensagemEnviadaCentral;
+const tempoMensagensSegundos = tempoTotalMensagens * segundos;
+
+console.log(" " + tempoTotalMensagens + " minutos");
+console.log(" " + tempoMensagensSegundos + " segundos");
+
+==================================================================================================
+
+// # Parte 13 — Conversão de tipos ⭐⭐⭐
+
+// Um sistema antigo retornou a quantidade de tripulantes como texto:
+
+// ```javascript
+// const tripulantes = "4";
+// ```
+
+// E existe:
+
+// ```javascript
+// const novosTripulantes = 2;
+// ```
+
+// Execute:
+
+// ```javascript
+// console.log(tripulantes + novosTripulantes);
+// ```
+
+// ## Antes de executar
+
+// Anote qual resultado você espera.
+
+// Depois execute.
+
+// ### Perguntas
+
+// 1. Qual foi o resultado?
+42
+// 2. Por que isso aconteceu?
+Porque o valor da const tripulantes está entre ""
+// 3. Qual o tipo de `tripulantes`?
+String
+// 4. Como podemos transformar `"4"` em número?
+No console.log posso colocar um "Number" antes do valor "tripulantes" para converter a String em Número
+
+// Corrija o código para que o resultado seja:
+
+// 6
+
+const tripulantes = "4";
+const novosTripulantes = 2;
+
+console.log(Number(tripulantes) + novosTripulantes);
+
+============================================================================================================
+
+// # Parte 14 — Caixa misteriosa ⭐⭐⭐
+
+// Analise:
+
+// ```javascript
+// let codigoDeAcesso;
+// ```
+
+// Execute:
+
+// ```javascript
+// console.log(codigoDeAcesso);
+// console.log(typeof codigoDeAcesso);
+// ```
+
+// Responda:
+
+// 1. Qual foi o valor mostrado?
+undefined
+// 2. Qual foi o tipo apresentado?
+undefined
+// 3. O que isso significa?
+Que não foi definido nenhum valor na "variável"
+
+let codigoDeAcesso;
+
+console.log(codigoDeAcesso);
+console.log(typeof codigoDeAcesso);
+
+==========================================================================================================
+//questao15
+const capacidadeMaximaNave = 12000;
+const equipamentosCientificos = 4250;
+const alimentos = 1850;
+const oxigenio = 3100;
+const equipamentosPessoais = 950;
+const pesoTotalTransportado = equipamentosCientificos + alimentos + oxigenio + equipamentosPessoais;
+const pesoSobra = capacidadeMaximaNave - pesoTotalTransportado;
+
+console.log("Capacidade máxima: " + capacidadeMaximaNave + " kg");
+console.log("Carga utilizada: " + pesoTotalTransportado + " kg");
+console.log("Capacidade restante: " + pesoSobra + " kg");
+
+//questao16
+const pacotesAlimentos = 127;
+const capacidadeCaixa = 10;
+const quantidadeCaixas = Math.floor(pacotesAlimentos / capacidadeCaixa);
+const sobraPacotes = pacotesAlimentos % capacidadeCaixa;
+
+console.log("Caixas preenchidas: " + quantidadeCaixas);
+console.log("Sobra de pacotes: " + sobraPacotes);
+
+//questao17
+const consumoAguaTripulanteDia = 3;
+const duracaoMissao = 16;
+const capacidadeAguaNave = 220;
+const consumoTotalAguaPessoa = consumoAguaTripulanteDia * duracaoMissao;
+const consumoTotalAguaTripulacao = consumoTotalAguaPessoa * Number(tripulantes);
+const sobraAgua = capacidadeAguaNave - consumoTotalAguaTripulacao;
+
+console.log("Consumo total de água por pessoa: " + consumoTotalAguaPessoa);
+console.log("Consumo total de água da tripulação: " + consumoTotalAguaTripulacao);
+console.log("Quantidade de água resrtante: " + sobraAgua);
+
+//questao18
+console.log("==================================");
+console.log("        SUPERDEV SPACE AGENCY     ");
+console.log("==================================");
+
+console.log("");
+
+console.log("Missão: " + nomeMissao);
+console.log("Destino: " + destino);
+console.log("Tripulantes: " + numeroTripulantes);
+
+console.log("");
+
+console.log("Distância total: " + distanciaTotal + " km");
+console.log("Tempo estimado: " + tempoMissao + " horas");
+
+console.log("");
+
+console.log("Combustível inicial: " + combustivelInicial + " L");
+console.log("Combustível utilizado: " + consumoTotal + " L");
+console.log("Combustível restante: " + combustivelRestante + " L");
+
+console.log("");
+
+console.log("Carga utilizada: " + pesoTotalTransportado + " kg");
+console.log("Capacidade restante: " + pesoSobra + " kg");
+
+console.log("");
+
+console.log("Custo original: " + "R$ " + custoTotal);
+console.log("Reserva de segurança: " + "R$ " + valorReserva);
+console.log("Custo final: " + "RS " + custoMissaoReserva);
+
+console.log("");
+
+console.log("Patrocinadores: " + patrocinadores);
+console.log("Valor por patrocinador: " + "R$ " + custoPatrocinador);
+
+console.log("==================================");
+console.log("          MISSÃO PREPARADA        ");
+console.log("==================================");
+
+//desafio bonus 1
+const precoLitro = 25;
+const litrosUtilizados = 35000;
+const custoCombustivel = precoLitro * litrosUtilizados;
+
+console.log("Custo do combustível: ", custoCombustivel);
+
+//desafio bonus 2
+const custoMissao = 3000000;
+const percentualReserva = 10;
+const reserva = custoMissao * (percentualReserva / 100);
+const total = custoMissao + reserva;
+
+console.log("Reserva: ", reserva);
+console.log("Total: ", total);
