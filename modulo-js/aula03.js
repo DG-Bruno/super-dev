@@ -1,3 +1,68 @@
+/* ---# Lista de Exercícios — JavaScript: `if`, Lógica e Tomada de Decisão
+
+## SuperDev — Prática de Lógica com Condicionais
+
+### Objetivo
+
+Esta lista foi criada para praticar:
+
+- `if`
+- `else`
+- `else if`
+- operadores de comparação
+- operadores lógicos
+- tomada de decisão
+- raciocínio lógico
+- regras de negócio simples
+
+> O foco principal não é decorar sintaxe.
+> O foco é aprender a transformar uma regra em uma condição.
+
+# Regras da atividade
+
+Por enquanto, utilize apenas:
+
+- `const`
+- `let`
+- `console.log()`
+- operações matemáticas
+- `%`
+- comparações
+- `if`
+- `else`
+- `else if`
+- `&&`
+- `||`
+- `!`
+
+## Não utilize ainda
+
+- `while`
+- `for`
+- arrays
+- funções
+- objetos
+- DOM
+
+# Antes de programar
+
+Em exercícios mais difíceis, tente primeiro preencher:
+
+DADOS:
+
+PERGUNTA:
+
+REGRAS:
+
+CONDIÇÃO:
+
+RESULTADO: */
+
+===========================================================================================================================
+
+/* ## 1. Maior de idade ⭐
+Crie uma variável `idade`. Se a idade for maior ou igual a 18, mostre `Maior de idade`. Caso contrário, `Menor de idade`. */
+
 const idade = 31;
 
 if (idade >= 18) {
@@ -7,7 +72,12 @@ if (idade >= 18) {
 else {
     console.log("Menor de idade");
 }
+
 =======================================================
+
+/* ## 2. Positivo, negativo ou zero ⭐⭐
+Dado um número, mostre `Positivo`, `Negativo` ou `Zero`. */
+
 const numero = 31;
 
 if (numero > 0) {
@@ -21,7 +91,17 @@ else if (numero < 0) {
 else {
     console.log("Zero");
 }
+
 ==========================================================
+
+/* ## 3. Pode dirigir? ⭐⭐
+Dados:
+```javascript
+const idade = 20;
+const possuiCNH = true;
+```
+A pessoa só pode dirigir se tiver pelo menos 18 anos e possuir CNH. */
+
 const idade = 20;
 const possuiCNH = true;
 
@@ -32,8 +112,20 @@ if (idade >= 18 && possuiCNH) {
 else {
     console.log("Não pode dirigir")
 }
+
 =============================================================
+
+/* ## 4. Desconto maluco ⭐⭐⭐⭐
+Uma loja oferece:
+- compra acima de R$ 1.000 → 15%
+- compra acima de R$ 500 → 10%
+- compra acima de R$ 200 → 5%
+- demais compras → sem desconto
+
+Calcule o valor do desconto e o valor final. */
+
 const valorCompra = 999;
+
 let desconto = 0;
 
 if (valorCompra > 1000) {
@@ -56,6 +148,7 @@ const valorFinal = valorCompra - desconto;
 
 console.log("Desconto:", desconto);
 console.log("Valor final:", valorFinal);
+
 =================================================================
 const numero = 31;
 
