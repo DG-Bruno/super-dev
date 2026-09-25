@@ -73,6 +73,11 @@ const destino = "Estação Alpha";
 const numeroTripulantes = 4;
 const missaoTripulada = true;
 
+console.log("Missão:", nomeMissao);
+console.log("Destino:", destino);
+console.log("Tripulantes:", numeroTripulantes);
+console.log("Missão tripulanda:", missaoTripulada);
+
 =============================================================================================
 
 // # Parte 2 — Descobrindo os tipos ⭐
@@ -101,6 +106,7 @@ const missaoTripulada = true;
 // console.log(missaoTripulada);
 
 console.log(typeof nomeMissao);
+console.log(typeof destino);
 console.log(typeof numeroTripulantes);
 console.log(typeof missaoTripulada);
 
@@ -133,7 +139,7 @@ const distanciaAteEstacao = 384000;
 const distanciaVolta = 384000;
 const distanciaTotal = distanciaAteEstacao + distanciaVolta;
 
-console.log("Distância total da missão:" + " " + distanciaTotal + " " + "km");
+console.log("Distância total da missão:", distanciaTotal, "km");
 
 ====================================================================================================
 
@@ -158,7 +164,7 @@ console.log("Distância total da missão:" + " " + distanciaTotal + " " + "km");
 const velocidadeMedia = 28000;
 const tempoMissao = distanciaTotal / velocidadeMedia;
 
-console.log("Tempo estimado da missão:" + " " + tempoMissao + " " + "horas");
+console.log("Tempo estimado da missão:", tempoMissao, "horas");
 
 =================================================================================================
 
@@ -193,9 +199,9 @@ const consumoVolta = 17000;
 const consumoTotal = consumoIda + consumoVolta;
 const combustivelRestante = combustivelInicial - consumoTotal;
 
-console.log("Combustível inicial:" + " " + combustivelInicial + " " + "litros");
-console.log("Combustível ultilizado:" + " " + consumoTotal + " " + "litros");
-console.log("Combustível restante:" + " " + combustivelRestante + " " + "litros");
+console.log("Combustível inicial:", combustivelInicial, "litros");
+console.log("Combustível ultilizado:", consumoTotal, "litros");
+console.log("Combustível restante:", combustivelRestante, "litros");
 
 =============================================================================================
 
@@ -218,7 +224,7 @@ console.log("Combustível restante:" + " " + combustivelRestante + " " + "litros
 
 const consumoMedio = distanciaTotal / consumoTotal;
 
-console.log("Consumo médio:" + " " + consumoMedio + " " + "km/L");
+console.log("Consumo médio:", consumoMedio, "km/L");
 
 ====================================================================================================
 
@@ -252,11 +258,11 @@ const gastosEquipamentos = 920000;
 const gastosAlimentacao = 75000;
 const custoTotal = gastosCombustivel + gastosEquipe + gastosEquipamentos + gastosAlimentacao;
 
-console.log("Combustível:" + " " + "R$" + " " + gastosCombustivel);
-console.log("Equipe:"+ " " + "R$" + " " + gastosEquipe);
-console.log("Equipamentos:" + " " + "R$" + " " + gastosEquipamentos);
-console.log("Alimentação:" + " " + "R$" + " " + gastosAlimentacao);
-console.log("Custo total:" + " " + "R$" + " " + custoTotal);
+console.log("Combustível: R$", gastosCombustivel);
+console.log("Equipe: R$", gastosEquipe);
+console.log("Equipamentos: R$", gastosEquipamentos);
+console.log("Alimentação: R$", gastosAlimentacao);
+console.log("Custo total: R$", custoTotal);
 
 ================================================================================================
 
@@ -310,8 +316,8 @@ EX: Valor * 12 / 100
 
 // Somente depois transforme sua resposta em código.
 
-const reservaFinanceira = 12;
-const valorReserva = custoTotal * (reservaFinanceira / 100);
+const percentualReservaFinanceira = 12;
+const valorReserva = custoTotal * (percentualReservaFinanceira / 100);
 const custoMissaoReserva = custoTotal + valorReserva;
 
 console.log("Custo original:" + " " + "R$" + " " + custoTotal);
@@ -330,9 +336,9 @@ console.log("Custo final: " + "R$ " + custoMissaoReserva);
 
 // Novo valor por patrocinador: R$ XXXXX
 
-const novoCustoPatrocinador = custoMissaoReserva / patrocinadores;
+const novoCustoPatrocinadores = custoMissaoReserva / patrocinadores;
 
-console.log("Novo valor dos patrocinador: " + "R$ " + novoCustoPatrocinadores);
+console.log("Novo valor por patrocinador: " + "R$ " + novoCustoPatrocinadores);
 
 ============================================================================================
 
@@ -593,12 +599,12 @@ Consumo total da tripulação: 192 litros
 
 // Depois transforme sua lógica em JavaScript.
 
-
+const tripulantes = 4;
 const consumoAguaTripulanteDia = 3;
 const duracaoMissao = 16;
 const capacidadeAguaNave = 220;
 const consumoTotalAguaPessoa = consumoAguaTripulanteDia * duracaoMissao;
-const consumoTotalAguaTripulacao = consumoTotalAguaPessoa * Number(tripulantes);
+const consumoTotalAguaTripulacao = consumoTotalAguaPessoa * tripulantes;
 const sobraAgua = capacidadeAguaNave - consumoTotalAguaTripulacao;
 
 console.log("Consumo total de água por pessoa: " + consumoTotalAguaPessoa);
@@ -607,8 +613,43 @@ console.log("Quantidade de água resrtante: " + sobraAgua);
 
 ======================================================================================================
 
+// # Parte 18 — Relatório final da missão ⭐⭐⭐⭐⭐
 
-//questao18
+// Agora utilize os valores calculados anteriormente para produzir um relatório no console.
+
+// Ele deve ficar aproximadamente assim:
+
+// =======================================
+//         SUPERDEV SPACE AGENCY
+// =======================================
+
+// Missão: SuperDev I
+// Destino: Estação Alpha
+// Tripulantes: 4
+
+// Distância total: XXXXX km
+// Tempo estimado: XXXXX horas
+
+// Combustível inicial: XXXXX L
+// Combustível utilizado: XXXXX L
+// Combustível restante: XXXXX L
+
+// Carga utilizada: XXXXX kg
+// Capacidade restante: XXXXX kg
+
+// Custo original: R$ XXXXX
+// Reserva de segurança: R$ XXXXX
+// Custo final: R$ XXXXX
+
+// Patrocinadores: 5
+// Valor por patrocinador: R$ XXXXX
+
+// =======================================
+//           MISSÃO PREPARADA
+// =======================================
+
+// Você pode utilizar vários `console.log()`.
+
 console.log("==================================");
 console.log("        SUPERDEV SPACE AGENCY     ");
 console.log("==================================");
@@ -650,18 +691,99 @@ console.log("==================================");
 console.log("          MISSÃO PREPARADA        ");
 console.log("==================================");
 
-//desafio bonus 1
-const precoLitro = 25;
+========================================================================================================
+
+// # Desafio bônus 1 — Descubra o erro 🐛
+
+// O código abaixo deveria calcular o custo de combustível da missão.
+
+// Porém, existem erros.
+
+// ```javascript
+// const precoLitro = "25";
+// const litrosUtilizados = 35000;
+
+// const custoCombustivel = precoLitro + litrosUtilizados;
+
+// console.log("Custo do combustível:", custoCombustivel);
+// ```
+
+// O resultado correto deveria ser:
+
+// 875000
+
+// Descubra o problema e corrija.
+
+const precoLitro = "25";
 const litrosUtilizados = 35000;
-const custoCombustivel = precoLitro * litrosUtilizados;
+const custoCombustivel = Number(precoLitro) * litrosUtilizados;
 
 console.log("Custo do combustível: ", custoCombustivel);
 
-//desafio bonus 2
+=============================================================================================================
+
+// # Desafio bônus 2 — Outro bug 🐛
+
+// Analise:
+
+// ```javascript
+// const custoMissao = 3000000;
+// const percentualReserva = 10;
+
+// const reserva = custoMissao / percentualReserva;
+// const total = custoMissao - reserva;
+
+// console.log("Reserva:", reserva);
+// console.log("Total:", total);
+// ```
+
+// O objetivo era:
+
+// 1. calcular 10% de reserva;
+// 2. adicionar essa reserva ao custo da missão.
+
+// O programa está correto?
+
+// Se não estiver, corrija.
+
 const custoMissao = 3000000;
 const percentualReserva = 10;
-const reserva = custoMissao * (percentualReserva / 100);
+const reserva = custoMissao * percentualReserva / 100;
 const total = custoMissao + reserva;
 
 console.log("Reserva: ", reserva);
 console.log("Total: ", total);
+
+===============================================================================================================
+
+/* # Regra especial do professor 👨‍💻
+
+Se você travar em algum exercício, não comece perguntando:
+
+> "Qual código eu uso?"
+
+Primeiro tente responder:
+
+1. Quais informações eu tenho?
+
+2. O que preciso descobrir?
+
+3. Qual conta eu faria no papel?
+
+4. Quais valores preciso guardar?
+
+5. Quais operações preciso realizar?
+
+6. O que preciso mostrar como resultado?
+
+Depois transforme essas respostas em JavaScript.
+
+# Importante 
+
+Não é necessário terminar todos os desafios rapidamente.
+
+A prioridade é conseguir explicar:
+
+> **por que seu código funciona.**
+
+Se você chegou ao resultado copiando algo sem entender, volte ao problema e tente explicar cada linha utilizada. */
