@@ -150,6 +150,11 @@ console.log("Desconto:", desconto);
 console.log("Valor final:", valorFinal);
 
 =================================================================
+
+/* ## 5. Par ou ímpar ⭐
+Dado um número, determine se ele é par ou ímpar. */
+
+
 const numero = 31;
 
 if (numero % 2 === 0) {
@@ -159,7 +164,18 @@ if (numero % 2 === 0) {
 else {
     console.log("Impar");
 }
+
 =================================================================
+
+/* ## 6. Aluno aprovado ⭐⭐
+Dados:
+```javascript
+const nota1 = 7;
+const nota2 = 8;
+const nota3 = 5;
+```
+Calcule a média. Média >= 7 → aprovado; caso contrário → reprovado. */
+
 const nota1 = 7;
 const nota2 = 8;
 const nota3 = 5;
@@ -173,7 +189,12 @@ if (media >= 7) {
 else {
     console.log("Reprovado")
 }
+
 ==================================================================
+
+/* ## 7. Qual número é maior? ⭐
+Dados dois números diferentes, mostre qual é o maior. */
+
 const idadeEle = 31;
 const idadeEla = 29;
 
@@ -184,7 +205,17 @@ if (idadeEle > idadeEla) {
 else {
     console.log("Idade dela é maior")
 }
+
 ======================================================================
+
+/* ## 8. Login ⭐⭐
+Dados:
+```javascript
+const usuario = "admin";
+const senha = "1234";
+```
+Se usuário e senha estiverem corretos, mostre `Login realizado`. Caso contrário, `Usuário ou senha incorretos`. */
+
 const usuario = "admin";
 const senha = 1234;
 
@@ -195,7 +226,12 @@ if (usuario === "admin" && senha === 1234) {
 else {
     console.log("Usuário ou senha incorretos");
 }
+
 ========================================================================
+
+/* ## 9. Pode entrar no brinquedo? ⭐⭐⭐
+Uma pessoa só pode entrar se altura >= 1.40 e idade >= 12. */
+
 const idade = 31;
 const altura = 1.92;
 
@@ -205,7 +241,12 @@ if (idade >= 12 && altura >= 1.40) {
     else {
         console.log("Não pode entrar no brinquedo");
 }
+
 =======================================================================
+
+/* ## 10. Maior entre três números ⭐⭐⭐⭐
+Dados três números diferentes, descubra qual deles é o maior. */
+
 const numero1 = 31;
 const numero2 = 30;
 const numero3 = 28;
@@ -219,7 +260,12 @@ else if (numero2 > numero1 && numero2 > numero3) {
 else {
     console.log("Número 3 é maior");
 }
+
 ===========================================================================
+
+/* ## 11. Número múltiplo de 5 ⭐
+Mostre se determinado número é múltiplo de 5. */
+
 const numero = 31;
 
 if (numero % 5 === 0) {
@@ -228,7 +274,12 @@ if (numero % 5 === 0) {
 else {
     console.log("Não é múltiplo de 5");
 }
+
 =============================================================================
+
+/* ## 12. Frete grátis ⭐⭐
+A loja oferece frete grátis se compra >= R$ 300 ou o cliente for VIP. */
+
 const valorCompra = 508;
 const clienteVip = true;
 
@@ -238,3 +289,33 @@ if (valorCompra >= 300 || clienteVip) {
 else {
     console.log("Cliente paga o frete");
 }
+
+===================================================================================
+
+/* ## 13. Classificação de temperatura ⭐⭐
+- abaixo de 10 → `Muito frio`
+- de 10 até 19 → `Frio`
+- de 20 até 29 → `Agradável`
+- 30 ou mais → `Quente` */
+
+let temperatura = 18;
+
+if (temperatura < 10) {
+    console.log("Temperatura:", "Muito frio");
+}
+
+else if (temperatura <= 19) {
+    console.log("Temperatura:", "Frio");
+}
+
+else if (temperatura <= 29) {
+  console.log("Temperatura:", "Agradável");
+}
+
+else {
+    console.log("Temperatura:", "Quente");
+}
+    
+    
+    
+    
