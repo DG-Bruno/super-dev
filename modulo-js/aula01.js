@@ -20,7 +20,6 @@
 // > Nesta atividade, o objetivo principal não é decorar JavaScript.  
 // > O objetivo é **entender o problema, separar os dados e transformar a solução em código**.
 
-// ---
 
 // # Regras da atividade
 
@@ -312,7 +311,7 @@ console.log("Custo por patrocinador:" + " " + "R$" + " " + custoPatrocinador);
 // Responda:
 
 // Como calculamos 12% de um valor?
-EX: Valor * 12 / 100
+EX: Valor * (12 / 100);
 
 // Somente depois transforme sua resposta em código.
 
@@ -437,7 +436,7 @@ Porque o valor da const tripulantes está entre ""
 // 3. Qual o tipo de `tripulantes`?
 String
 // 4. Como podemos transformar `"4"` em número?
-No console.log posso colocar um "Number" antes do valor "tripulantes" para converter a String em Número
+No console.log podemos colocar um "Number" antes do valor "tripulantes" para converter a String em Número
 
 // Corrija o código para que o resultado seja:
 
@@ -743,12 +742,13 @@ console.log("Custo do combustível: ", custoCombustivel);
 // 2. adicionar essa reserva ao custo da missão.
 
 // O programa está correto?
+Não
 
 // Se não estiver, corrija.
 
 const custoMissao = 3000000;
 const percentualReserva = 10;
-const reserva = custoMissao * percentualReserva / 100;
+const reserva = custoMissao * (percentualReserva / 100);
 const total = custoMissao + reserva;
 
 console.log("Reserva: ", reserva);
