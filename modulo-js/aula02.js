@@ -1,10 +1,10 @@
-console.log(10 > 5);
-console.log(10 < 5);
-console.log(18 >= 18);
-console.log(17 >= 18);
+console.log(10 > 5); //true
+console.log(10 < 5); //false
+console.log(18 >= 18); //true
+console.log(17 >= 18); //false
 
-console.log(5 === "5");
-console.log(5 !== "5");
+console.log(5 === "5"); //false
+console.log(5 !== "5"); //true
 
 =============================================================================
 
@@ -73,17 +73,17 @@ else {
 
 =================================================================================
 
-V & V = V
-V & F = F
-F & V = F
-F & F = F
+V && V = V
+V && F = F
+F && V = F
+F && F = F
 
 -----------------------------
 
-V | V = V
-V | F = V
-F | V = V
-F | F = F
+V || V = V
+V || F = V
+F || V = V
+F || F = F
 
 ===================================================================================
 
@@ -108,7 +108,7 @@ const clienteVip = true;
 
 let desconto = 0;
 
-if (valorCompra >=500 && clienteVip) {
+if (valorCompra >= 500 && clienteVip) {
     desconto = valorCompra * 20 / 100;
 }
 
