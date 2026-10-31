@@ -1386,7 +1386,7 @@ Espaços: X
 
 > Considere apenas letras sem acentos para a classificação entre maiúsculas e minúsculas. O `é` pode ser ignorado nessa classificação. */
 
-let texto = "JavaScript é Legal 2026";
+/* let texto = "JavaScript é Legal 2026";
 
 let maiusculas = 0;
 let minusculas = 0;
@@ -1411,4 +1411,4 @@ for (let i = 0; i < texto.length; i++) {
 console.log("Maiúsculas:", maiusculas);
 console.log("Minúsculas:", minusculas);
 console.log("Números:", numeros);
-console.log("Espaços:", espacos);
+console.log("Espaços:", espacos); */
