@@ -1,3 +1,17 @@
+/* function ehPar(numero) {
+    return numero % 2 === 0 ? true : false;
+}
+
+for (let numero = 0; numero <= 100; numero++) {
+    if (ehPar(numero)) {
+        console.log(numero, "é Par");
+    } else {
+        console.log(numero, "é Impar");
+    }
+} */
+
+/* ====================================================================== */
+
 /* const alunos = [
     "Dongle", // 0
     "William", // 1
@@ -96,16 +110,6 @@ Utilize métodos de Arrays para realizar as ações **na ordem**:
 
 **Perguntas para pensar:** Qual método adiciona no início? Qual remove do início? Qual adiciona no fim? Qual remove do fim?
 
-### Desafio extra — Histórico de tarefas
-
-Considere:
-
-```js
-const tarefas = ["Estudar HTML", "Estudar CSS"];
-```
-
-Adicione `"Estudar JavaScript"` ao final, adicione `"Revisar lógica"` ao início e remova a tarefa do final. Mostre a lista depois de cada operação. */
-
 /* const fila = ["Ana", "Bruno", "Carla"];
 
 fila.push("Diego");
@@ -122,6 +126,16 @@ console.log(fila);
 console.log(fila.length); */
 
 /* ====================================================================== */
+
+//### Desafio extra — Histórico de tarefas
+
+//Considere:
+
+//```js
+//const tarefas = ["Estudar HTML", "Estudar CSS"];
+//```
+
+//Adicione `"Estudar JavaScript"` ao final, adicione `"Revisar lógica"` ao início e remova a tarefa do final. Mostre a lista depois de cada operação.
 
 /* const tarefas = ["Estudar HTML", "Estudar CSS"];
 
@@ -169,20 +183,22 @@ let maiorNota = 0;
 let menorNota = notas[0];
 
 for (let i = 0; i < notas.length; i++) {
-    somaNotas += notas[i];
+    const nota = notas[i];
 
-    console.log("Aluno", i + 1, "- Nota:", notas[i]);
+    somaNotas += nota;
 
-    if (notas[i] >= 7) {
+    console.log("Aluno", i + 1, "- Nota:", nota);
+
+    if (nota >= 7) {
         notasMaioresOuIguaisSete++;
     }
 
-    if (notas[i] >= maiorNota) {
+    if (nota >= maiorNota) {
         maiorNota = notas[i];
     }
 
-    if (notas[i] <= menorNota) {
-        menorNota = notas[i];
+    if (nota <= menorNota) {
+        menorNota = nota;
     }
     
 }
@@ -256,7 +272,8 @@ A proposta é **reutilizar tudo o que vocês já aprenderam** para resolver prob
 
 > **Atenção:** `.includes()` em **String** está liberado; em **Array**, ainda não. Quando precisarem procurar um elemento em um Array, façam a busca usando repetição e comparação.
 
-**Como praticar:** para cada problema, identifiquem primeiro o que entra, o que precisa acontecer e qual é a saída esperada. Testem o código com os valores fornecidos e, quando possível, mudem os dados para verificar se a solução continua funcionando.
+**Como praticar:** para cada problema, identifiquem primeiro o que entra, o que precisa acontecer e qual é a saída esperada. 
+Testem o código com os valores fornecidos e, quando possível, mudem os dados para verificar se a solução continua funcionando.
 
 **Sugestão de ritmo:** façam os exercícios **1 a 20** como trilha principal. Os **21 a 30** são desafios extras para quem quiser aprofundar. Não é necessário resolver todos de uma vez.
 
@@ -1687,7 +1704,7 @@ Você pode criar outras funções se ajudar a organizar a solução.
 
 --- */
 
-const produtos = ["Caderno", "Caneta", "Borracha", "Lápis"];
+/* const produtos = ["Caderno", "Caneta", "Borracha", "Lápis"];
 const precos = [20, 4, 3, 2];
 const estoques = [3, 10, 0, 8];
 
@@ -1713,10 +1730,10 @@ function estoqueSuficiente(estoque, quantidade) {
 }
 
 function mostrarEstoque(produtos, estoques) {
-    console.log("\n--- ESTOQUE FINAL ---");
+    console.log("--- ESTOQUE FINAL ---");
 
     for (let i = 0; i < produtos.length; i++) {
-        console.log(`${produtos[i]}: ${estoques[i]} unidades`);
+        console.log(produtos[i] + ":", estoques[i], "unidades");
     }
 }
 
@@ -1728,13 +1745,13 @@ function processarPedidos() {
         const indice = buscarIndiceProduto(produtos, nome);
 
         if (indice === -1) {
-            console.log(`Pedido recusado: ${nome} não encontrado.`);
+            console.log("Pedido recusado:", nome, "não encontrado.");
             pedidosRecusados++;
             continue;
         }
 
         if (!estoqueSuficiente(estoques[indice], quantidade)) {
-            console.log(`Pedido recusado: estoque insuficiente de ${nome}.`);
+            console.log("Pedido recusado: estoque insuficiente de", nome);
             pedidosRecusados++;
             continue;
         }
@@ -1743,10 +1760,10 @@ function processarPedidos() {
         faturamento += precos[indice] * quantidade;
         quantidadePedidos++;
 
-        console.log(`Pedido aceito: ${quantidade} ${nome}(s).`);
+        console.log("Pedido aceito:", quantidade, nome + "(s).");
     }
 
-    console.log("\n--- RESUMO DAS VENDAS ---");
+    console.log("--- RESUMO DAS VENDAS ---");
     console.log("Faturamento total: R$", faturamento);
     console.log("Pedidos aceitos:", quantidadePedidos);
     console.log("Pedidos recusados:", pedidosRecusados);
@@ -1754,7 +1771,7 @@ function processarPedidos() {
     mostrarEstoque(produtos, estoques);
 }
 
-processarPedidos();
+processarPedidos(); */
 
 /* ====================================================================== */
 
